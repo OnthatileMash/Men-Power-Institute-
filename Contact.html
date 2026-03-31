@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us | Men Power Institute</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="main-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">Men Power Institute</div>
+          <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Process and Research.html">Process & Research</a></li>
+            <li><a href="#success">Success Stories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+          </ul>
+          <a href="Application.html" class="cta-button">Apply Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" style="text-align: center; padding: 5rem 1rem;">
+      <h1>Contact Us</h1>
+      <p class="hero-subtitle">We're here to help you bridge the gap between graduation and career success.</p>
+    </section>
+
+    <section class="contact-section" style="padding: 4rem 0; background: var(--light-bg); color: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+          <div>
+            <h2 style="color: var(--accent-red); margin-bottom: 1rem;">Get in Touch</h2>
+            <p><strong>📍 Address:</strong> No. 01 Mathibela Village, Zebediela, Limpopo, RSA, 0628</p>
+            <p><strong>📧 Email:</strong> <a href="mailto:Menpowerinstitute@gmail.com" style="color: var(--accent-gold);">Menpowerinstitute@gmail.com</a></p>
+            <p><strong>📞 Phone:</strong> <a href="tel:+27658588675" style="color: var(--accent-gold);">+27 65 858 8675</a></p>
+            <p><strong>🕒 Office Hours:</strong> Monday - Friday, 08:00 - 17:00</p>
+          </div>
+
+          <div>
+            <h2 style="color: var(--accent-red); margin-bottom: 1rem;">Send Us a Message</h2>
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+              <input type="text" name="name" placeholder="Your Name" required style="padding: 1rem; border-radius: 8px; border: none;" />
+              <input type="email" name="email" placeholder="Your Email" required style="padding: 1rem; border-radius: 8px; border: none;" />
+              <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 1rem; border-radius: 8px; border: none;"></textarea>
+              <button type="submit" class="cta-button" style="align-self: flex-start;">Submit</button>
+            </form>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align: center;">
+      <div class="container">
+        <h2>Let's Build Your Future Together</h2>
+        <p>Whether you're a graduate, employer, or partner — we're ready to connect.</p>
+        <div class="cta-buttons">
+          <a href="Application-Page.html" class="btn-primary">Apply Now</a>
+          <a href="process-and-research.html" class="btn-secondary">Explore Our Process</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Men Power Institute. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll animation for contact page
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.contact-section form, .contact-section div');
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (elementTop < windowHeight - 100) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+            element.style.transition = 'all 0.6s ease-out';
+          } else {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+          }
+        });
+      }
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
+  </body>
+</html>

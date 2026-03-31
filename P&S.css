@@ -1,0 +1,85 @@
+/* === Process & Research Page Enhancements === */
+:root {
+            --primary-blue: #adb3be;
+            --secondary-blue: #1e3269;
+            --accent-gold: #f6c342;
+            --accent-orange: #f59e42;
+            --accent-red: #d7263d;
+            --accent-grey: #6b7280;
+            --light-bg: rgb(2, 25, 47);
+            --dark-bg: #0a1a3c;
+            --white: #ffffff;
+            --black: #000000;
+            --text-dark: #222b45;
+            --text-light: #03386e;
+        }
+/* Section Titles */
+.section-title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--accent-red);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Process Timeline Enhancements */
+.process-step {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.process-step.animate-fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Research Cards Enhancements */
+.research-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.research-card.animate-fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA Section */
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-gold);
+}
+.cta-section p {
+  font-size: 1.2rem;
+  color: var(--white);
+  opacity: 0.9;
+}
+.cta-buttons a {
+  font-size: 1rem;
+}
+
+/* Blockquote Styling */
+blockquote {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-left: 5px solid var(--accent-red);
+  border-radius: 10px;
+  font-style: italic;
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .process-timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .process-step {
+    width: 100%;
+  }
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
