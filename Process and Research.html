@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process & Research | Men Power Institute</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header" id="main-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">Men Power Institute</div>
+          <ul class="nav-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Process and Research.html" class="active">Process & Research</a></li>
+            <li><a href="#success">Success Stories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+          <a href="Application.html" class="cta-button">Apply Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" style="text-align: center; padding: 5rem 1rem;">
+      <h1>Process & Research</h1>
+      <p class="hero-subtitle">From evaluation to employment — powered by data, driven by purpose.</p>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <h2 class="section-title">Our 4-Step Process</h2>
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Assessment & Research</h3>
+            <p>Each graduate undergoes a comprehensive evaluation covering academic qualifications, soft skills, and career goals. Using our data intelligence system, we match each learner with relevant industries based on SETA-aligned standards and national skills demand data.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Strategic Matching</h3>
+            <p>We use our proprietary Graduate-Industry Alignment Model (GIAM) to identify ideal placements for each candidate. Partnerships with employers across sectors ensure alignment between training outcomes and real-world needs.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Skills Preparation</h3>
+            <p>Graduates complete tailored workplace-readiness programs designed to close the “skills gap.” This includes technical modules, digital literacy, professional communication, and ethical practice training.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Placement & Advancement</h3>
+            <p>Our graduates are placed into meaningful employment, with continuous tracking to ensure growth, retention, and performance excellence. Post-placement support includes mentorship and career progression pathways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <div class="container">
+        <h2 class="section-title">Research That Drives Impact</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Our decisions are evidence-based, informed by real-time data and industry analytics.</p>
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="research-icon">📊</div>
+            <h3>Graduate Employment Analytics</h3>
+            <p>We analyze national and regional employment trends, identifying where graduates struggle most — and designing interventions that directly address those challenges.</p>
+            <p><strong>Key Insight:</strong> 73% of unemployed graduates lack exposure to industry experience — our model closes this gap through practical immersion.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🎯</div>
+            <h3>Skills Gap Research</h3>
+            <p>Our Skills Observatory Program tracks employer feedback and SETA reports to identify which skills are in highest demand across South African industries.</p>
+            <p><strong>Example Finding:</strong> Employers report a 43% gap in problem-solving and communication skills — areas targeted in our readiness curriculum.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🔍</div>
+            <h3>Market Intelligence Network</h3>
+            <p>Through partnerships with private sector data firms and national agencies, we maintain a live feed of job market insights that continuously inform our placement models.</p>
+            <p><strong>Ongoing Monitoring:</strong> 24/7 tracking of emerging roles, technologies, and growth sectors in the economy.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">💼</div>
+            <h3>Career Tracking & Impact Studies</h3>
+            <p>We follow up with graduates post-placement to measure long-term impact, job satisfaction, and advancement rates — feeding this data back into our continuous improvement loop.</p>
+            <p><strong>Result:</strong> 95% of MPI graduates remain employed beyond 12 months, with measurable income growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="padding: 4rem 1rem; text-align: center;">
+      <div class="container">
+        <h2>Turning Research into Real Results</h2>
+        <p>Every insight we gather helps another graduate take their first step into the mainstream economy.</p>
+        <div class="cta-buttons">
+          <a href="Application-Page.html" class="btn-primary">Join the Program</a>
+          <a href="index.html#success" class="btn-secondary">View Success Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Men Power Institute. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Add this inside <body> after your last <section> -->
+  <script>
+    // Animate icons and cards on scroll
+    function animateOnScroll() {
+      const elements = document.querySelectorAll('.process-step, .research-card');
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (elementTop < windowHeight - 100) {
+          element.style.opacity = '1';
+          element.style.transform = 'translateY(0)';
+          element.style.transition = 'all 0.6s ease-out';
+        } else {
+          element.style.opacity = '0';
+          element.style.transform = 'translateY(30px)';
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+
+  </body>
+</html>
